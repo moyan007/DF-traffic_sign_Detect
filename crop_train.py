@@ -7,6 +7,8 @@ from PIL import Image
 from  matplotlib import pyplot as plt
 import cv2
 
+"""这里的train_only.csv文件是抽取了原训练文件train_label_fix.csv中的X1 Y1 X3 Y3以及filename和type之后的文件，剔除清洗掉的明显错误标注的两张图片，
+如果发现更多错误标注，剔除了更好"""
 df = pd.read_csv("./data/train_only.csv",header=None)
 t = open('./data/detla.txt', 'w')
 
