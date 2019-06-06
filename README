@@ -9,6 +9,8 @@
 总之，参加比赛嘛，一次学习和实践的过程，也着实在这个过程里学习到了不少的东西。分享给大家，交流学习一下
 
 这里简单的补充下程序的使用方法：首先运行crop_train.py文件，对原训练集进行裁剪，生成了data_train.csv标签文件；然后运行data路径下的划分验证集和训练集
-的脚本，然后可以直接运行Python train.py csv data/train_label.csv data/classes.csv --val_annotations data/val_label.csv. 一般即可正常运行训练，
+的脚本，然后可以直接运行Python train.py csv data/train_label.csv data/classes.csv --val_annotations data/val_label.csv. 一般即可正常开始训练。
+训练完成后，需要运行crop_test.py对测试集进行裁剪，然后执行Python convert_model.py model1.h5 model2.h5,完成模型的转化才可以用于测试。最后即可执行
+test文件，生成结果，并对裁剪后的生成结果进行还原（通过test_crop_result.py脚本），得到最终检测结果。output路径下的ensemble脚本可以对多个检测结果进行融合。
 调参方面需要自己进一步研究看下源码即可。如还存在问题，欢迎一起交流学习
 
