@@ -1,6 +1,6 @@
 """当前脚本用于裁剪训练图像
 以目标中心为原点 上下左右各扩展200pixel进行切割
-""""
+"""
 import pandas as pd
 import shutil
 import os
