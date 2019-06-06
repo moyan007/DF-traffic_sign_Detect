@@ -1,3 +1,4 @@
+#这个脚本用于将训练生成的模型转换成可以进行测试的模型
 import argparse
 import os
 import sys
