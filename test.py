@@ -1,3 +1,6 @@
+"""测试生成提交检测结果文件，之后要对先前的采集进行还原以及其他后处理
+主要更改测试采用的模型及生成csv文件名即可
+"""
 import keras
 
 # import keras_retinanet
