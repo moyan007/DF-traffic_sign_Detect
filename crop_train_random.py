@@ -1,3 +1,4 @@
+#训练集图像随机裁剪脚本，保证目标在裁剪后的图像上即可，从而进行数据增强，可增强多倍数据
 import pandas as pd
 import shutil
 import os
