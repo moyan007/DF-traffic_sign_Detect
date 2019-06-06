@@ -1,3 +1,4 @@
+"""当前脚本用于将裁剪后的训练集划分出最后的训练和验证集"""
 import os
 import numpy as np
 import pandas as pd
