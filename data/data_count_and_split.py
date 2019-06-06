@@ -4,6 +4,8 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 import shutil
 #raw labels
+"""这里的data_train.csv文件是抽取了原来训练文件中的X1 Y1 X3 Y3以及filename和type之后的文件，
+需要剔除两个label有问题的文件，当然也可以继续剔除其他觉得有问题的label"""
 raw_labels = pd.read_csv("data_train.csv",header=None).values
 print(raw_labels.shape)#(20238, 6)
 filename = []
