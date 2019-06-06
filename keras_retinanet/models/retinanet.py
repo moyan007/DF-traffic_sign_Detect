@@ -239,7 +239,7 @@ def retinanet(
     inputs,
     backbone_layers,
     num_classes,
-    num_anchors             = None,
+    num_anchors             = 18,
     create_pyramid_features = __create_pyramid_features,
     submodels               = None,
     name                    = 'retinanet'
